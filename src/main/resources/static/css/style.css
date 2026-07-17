@@ -1,0 +1,211 @@
+* {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e5ecff 50%, #eef2ff 100%);
+    min-height: 100vh;
+}
+
+/* ===== Auth pages (login/register) ===== */
+.auth-wrapper {
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #4361ee 0%, #3a0ca3 45%, #240046 100%);
+}
+
+.auth-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.auth-icon {
+    font-size: 2.75rem;
+    line-height: 1;
+}
+
+.auth-card h3 {
+    font-weight: 700;
+    color: #1a1f36;
+}
+
+/* ===== Navbar ===== */
+.navbar-custom {
+    background: linear-gradient(90deg, #240046 0%, #3a0ca3 55%, #4361ee 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.brand-title {
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    font-size: 1.15rem;
+}
+
+.role-pill {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.avatar-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f72585, #7209b7);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* ===== Stat cards ===== */
+.stat-card {
+    border: none;
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.15s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.stat-card .stat-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-total { background: linear-gradient(135deg, #4361ee, #3a0ca3); }
+.stat-pending { background: linear-gradient(135deg, #f77f00, #d62828); }
+.stat-resolved { background: linear-gradient(135deg, #2a9d8f, #168aad); }
+.stat-high { background: linear-gradient(135deg, #e5383b, #ba181b); }
+
+/* ===== Cards ===== */
+.card-custom {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    font-weight: 700;
+    color: #1a1f36;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ===== Table ===== */
+.table-custom {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.table-custom thead {
+    background: linear-gradient(90deg, #1a1f36, #2d3561);
+}
+
+.table-custom thead th {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border: none;
+    padding: 14px 16px;
+}
+
+.table-custom tbody td {
+    padding: 14px 16px;
+    vertical-align: middle;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #f5f7ff;
+}
+
+/* ===== Badges ===== */
+.badge-priority-high {
+    background: linear-gradient(135deg, #e5383b, #ba181b);
+}
+
+.badge-priority-medium {
+    background: linear-gradient(135deg, #f77f00, #dd6b20);
+}
+
+.badge-priority-low {
+    background: linear-gradient(135deg, #2a9d8f, #38a169);
+}
+
+.badge-status {
+    background: linear-gradient(135deg, #4a5568, #2d3748);
+}
+
+.badge {
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.3px;
+    border-radius: 20px;
+}
+
+/* ===== Buttons ===== */
+.btn-primary-custom {
+    background: linear-gradient(90deg, #4361ee, #3a0ca3);
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+    background: linear-gradient(90deg, #3a56d4, #2f0a8a);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(67, 97, 238, 0.35);
+    color: white;
+}
+
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1.5px solid #e2e8f0;
+    padding: 10px 14px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #4361ee;
+    box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.15);
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: #4a5568;
+}
+
+/* ===== Empty state ===== */
+.empty-state {
+    padding: 50px 0;
+    color: #a0aec0;
+    font-weight: 500;
+}
+
+.empty-state .empty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
